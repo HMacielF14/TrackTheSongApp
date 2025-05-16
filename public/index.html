@@ -1,0 +1,90 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track the Word</title>
+    <link rel="stylesheet" href="styling.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>🎵 Track the Word</h1>
+    </header>
+
+    <main>
+      <section id="introduction">
+        <h2>What is this game?</h2>
+        <p>
+          <strong>Track the Word</strong> is a music-based lyric game that
+          challenges you to find a song containing a specific word. Whether
+          you're playing solo, with a friend, or competitively, the game makes
+          song-based challenges fast and fun! ddd
+        </p>
+        <p>
+          This idea was inspired by Hayford's workplace game, where coworkers
+          tried to name songs based on random words. However, checking lyrics
+          manually slowed things down. <strong>Track the Word</strong> automates
+          that process with smart tech, verifying songs instantly using lyrics
+          databases.
+        </p>
+        <p>
+          Our goal is to keep the game dynamic, exciting, and competitive by
+          removing delays and boosting the fun.
+        </p>
+      </section>
+
+      <section id="gameModes">
+        <h2>Choose Your Game Mode</h2>
+        <ul>
+          <li>
+            <a href="solo.html">🎧 Solo Mode</a> – Play casually and test
+            yourself! You can enter your own word or generate one to start
+            guessing songs that contain it.
+          </li>
+          <li>
+            <a href="ranked.html">⏱ Ranked Challenge</a> – Time is ticking!
+            You’ll be given randomly generated words and must guess fast. No
+            entering your own word here — that would be cheating 😉.
+          </li>
+        </ul>
+      </section>
+
+      <section id="rankings">
+        <h2>🏆 Rankings</h2>
+        <table id="rankingsTable">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JS Generated -->
+          </tbody>
+        </table>
+      </section>
+
+      <section id="projectOverview">
+        <h2>Project Overview</h2>
+        <p>
+          <strong>Track the Word</strong> is a lyric-based guessing game powered
+          by automation. The game’s backend will use Python (Django or Flask) to
+          handle API calls and store results in a MySQL database, while the
+          frontend will use HTML, CSS, and JavaScript (or React for expanded
+          functionality).
+        </p>
+        <p>
+          Our chosen API is <strong>Vagalume</strong>, known for providing
+          reliable lyric and song metadata. This enables the game to validate
+          player submissions instantly, keeping the gameplay snappy and reducing
+          downtime.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by HMF</p>
+    </footer>
+  </body>
+</html>

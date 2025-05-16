@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Solo Mode - Track the Word</title>
+    <link rel="stylesheet" href="styling.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="solo.html">🎧 Solo</a></li>
+          <li><a href="ranked.html">⏱ Ranked</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gameMode">
+        <h1>🎧 Solo Mode</h1>
+        <p>
+          Play at your own pace. Enter or generate a word and try to guess a
+          song with that word in its lyrics or title.
+        </p>
+      </section>
+
+      <section id="wordGeneration">
+        <form id="gWordForm" onsubmit="generateWord(); return false;">
+          <label for="word">Enter a word or generate one:</label>
+          <input
+            id="word"
+            name="word"
+            type="text"
+            placeholder="Type a word here..."
+          />
+          <button id="gWord" type="submit">🎲 Generate Random Word</button>
+        </form>
+      </section>
+
+      <section id="guess">
+        <form id="guessForm" onsubmit="checkSong(); return false;">
+          <h3>Enter your guess:</h3>
+          <label for="artist">Artist</label>
+          <input id="artist" placeholder="Artist name" />
+          <label for="song">Song</label>
+          <input id="song" placeholder="Song title" />
+          <button type="submit">✅ Guess Song</button>
+        </form>
+      </section>
+
+      <section id="results">
+        <!-- JS Generated -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by HMF</p>
+    </footer>
+  </body>
+</html>

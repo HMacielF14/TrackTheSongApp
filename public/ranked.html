@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Ranked Challenge - Track the Word</title>
+  <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  <link rel="stylesheet" href="styling.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="solo.html">🎧 Solo</a></li>
+        <li><a href="ranked.html">⏱ Ranked</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gameMode">
+      <h1>⏱ Ranked Challenge</h1>
+      <p>
+        Guess songs with randomly generated words before time runs out! No
+        word entry allowed — the game will generate them for you.
+      </p>
+    </section>
+
+    <section id="timer">
+      <h2>⏳ Timer</h2>
+      <div id="progressContainer" style="width: 200px; height: 200px; margin: auto;"></div>
+      <div id="progressContainer" style="width: 200px; height: 200px; margin: auto;"></div>
+      <p id="scoreOutput"></p>
+    </section>
+
+    <section id="wordDisplay">
+      <h3>🔤 Your Word:</h3>
+      <p id="generatedWord">(Will appear here)</p>
+    </section>
+
+    <section id="guess">
+      <form id="guessForm" onsubmit="checkSong(); return false;">
+        <h3>Enter your guess:</h3>
+        <label for="artist">Artist</label>
+        <input id="artist" placeholder="Artist name" />
+        <label for="song">Song</label>
+        <input id="song" placeholder="Song title" />
+        <button type="submit">✅ Guess Song</button>
+      </form>
+    </section>
+
+    <section id="results">
+      <!-- JS Generated -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by HMF</p>
+  </footer>
+</body>
+
+</html>
